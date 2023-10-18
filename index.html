@@ -16,10 +16,18 @@
         #navid{
             width: 95%;
         }
-        .navbar{
-          background-color: rgb(149, 53, 53) !important;
-          
+        /* Set the background color of the navbar to white */
+        .navbar {
+          background-color: white;
         }
+
+        /* Set the text color of the links in the navbar to black */
+        /* Set the text color of the links in the navbar to black */
+        .navbar .navbar-nav .nav-item .nav-link {
+          color: black;
+        }
+
+
         #aboutus1{
           text-align: center;
           width: 80%;
@@ -27,13 +35,24 @@
         #abouttxt{
           text-align: left;
         }
+        .abt img{
+          border-radius: 50%;
+        }
+        .navbrnd{
+          width: 30%;
+          height: AUTO;
+        }
+        .carousel h5{
+          font-size: 50px;
+          
+        }
     </style>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top ">
         <div class="container-fluid" id="navid">
-          <a class="navbar-brand" href="#">EcoWatt Solutions</a>
+          <a class="navbar-brand" href="#"><img class="navbrnd" src="assests/logo-removebg-preview.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -99,11 +118,11 @@
       </div>
       <div>
         <h2>About us</h2>
-        <div class="row" id="aboutus1">
+        <div class="row abt" id="aboutus1">
           <div class="col-6">
             <img src="assests/aboutus1.jpg" alt="">
           </div>
-          <div class="col-6" id="abouttxt">
+          <div class="col-6 text-container" id="abouttxt">
           <h4>About EcoWatt Solutions</h4>
           <p>At EcoWatt Solutions, we are committed to a sustainable future powered by clean and renewable
             energy. Our journey began with a profound passion for the environment and a vision to make a
