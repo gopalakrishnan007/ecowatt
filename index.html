@@ -22,6 +22,7 @@
         body{
           font-family: 'Roboto', sans-serif;
         }
+       
         #navid{
             width: 95%;
         }
@@ -48,7 +49,7 @@
         }
         .navbrnd{
           width: 30%;
-          height: AUTO;
+          height: auto;
         }
         .carousel h6{
           font-size: 50px;
@@ -63,7 +64,7 @@
           text-align: center;
         }
          .faqsec{
-          width: 90%;
+          width: 80%;
           margin: 20px auto;
           align-items: center;
           display: flex;
@@ -100,6 +101,9 @@
         .faq i{
           transition: transform 0.5s ease-in;
         }
+        .faqsec h2{
+          margin: 20px 0 30px ;;
+        }
         .contactsec{
           width: 90%;
           margin: 20px auto;
@@ -121,6 +125,60 @@
         }
         .footersec i:hover{
           cursor: pointer;
+        }
+        .servicessec {
+          width: 90%;
+          margin: 40px auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; /* Center vertically */
+          align-items: center; /* Center horizontally */
+        }
+        #ser1{
+          display: flex;
+          margin: 0  0 0 auto;
+        }
+        .servicessec h6{
+          font-weight: bolder;
+          font-size: large;
+        }
+        .sertxt{
+          display: flex;
+          flex-direction: column;
+          justify-content: center; 
+        }
+        .servicessec img{
+          max-width: 300px;
+          height: auto;
+        }
+        .servicessec h2{
+          text-align: center;
+          margin: 30px;
+        }
+
+       
+        .gallerysec img{
+          max-width: 300px;
+          height: auto;
+          padding: 15px;
+        }
+        .gallery{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .gallerysec img:hover{
+          cursor: pointer;
+          opacity: 0.6;
+          transition: 0.5s;
+        }
+        .gallerysec h2{
+         text-align: center;
+         margin: 20px 0;
+        }
+        
+        .servicessec p    {
+          text-align: justify;
         }
     </style>
   </head>
@@ -193,7 +251,79 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <section class="servicessec">
+        <div class="services">
+          <h2>Services</h2>
+          <div class="row">
+            <div class="col-md-3">
+              <img class="img-fluid servicesimg" id="ser1" src="assests/solargif.gif" alt="solar gif">
+            </div>
+            <div class="col-md-6 sertxt">
+              <h6>Solar Power Solution</h6>
+              <p>EcoWatt Solutions offers comprehensive solar power solutions that empower homes and businesses
+                with clean, renewable energy. Our services include expertly designed and installed solar panel systems
+                for residential and commercial clients, efficient solar lighting solutions, and reliable solar panel
+                maintenance. We harness the sun's energy to reduce your carbon footprint and lower energy costs.</p>
+            </div>
+          </div>
+          <div class="services">
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6 sertxt">
+                <h6>Wind Energy Projects</h6>
+                <p>At EcoWatt Solutions, we're committed to wind energy projects that drive a sustainable future. Our
+                  expertise covers onshore and offshore wind farm development, project consultation, and meticulous
+                  wind turbine maintenance. We provide eco-friendly wind solutions that offer a reliable and renewable
+                  source of power.</p></div>
+              <div class="col-md-3">
+                <img class="img-fluid servicesimg" id="ser1" src="assests/kinderdijk-windmills.gif" alt="solar gif">
+              </div>
+            </div>
+            <div class="services">
+              <div class="row">
+                <div class="col-md-3">
+                  <img class="img-fluid servicesimg" id="ser1" src="assests/hydropower.gif" alt="solar gif">
+                </div>
+                <div class="col-md-6 sertxt">
+                  <h6>Hydroelectric Power Generation</h6>
+                  <p>EcoWatt Solutions is at the forefront of hydroelectric power generation. Our services encompass the
+                    design and construction of hydroelectric power plants, rigorous dam inspection and maintenance, and
+                    micro-hydro solutions for off-grid locations. We're dedicated to harnessing the energy of flowing water
+                    for a cleaner and greener world</p></div>
+              </div>
+              <div class="services">
+                <div class="row">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-6 sertxt">
+                    <h6>Energy Storage Solutions</h6>
+                    <p>Efficient energy storage is essential for a sustainable future. EcoWatt Solutions offers advanced energy
+                      storage systems, robust battery backup solutions for homes and businesses, and grid-balancing
+                      services. Our cutting-edge technology ensures stable and reliable energy supply, supporting the
+                      integration of renewable energy sources into the grid.
+                      </p></div>
+                  <div class="col-md-3">
+                    <img class="img-fluid servicesimg" style="background-color: transparent;" id="ser1" src="assests/battery.gif" alt="solar gif">
+                  </div>
+                </div>
+        </div>
+      </section>
+      <!------------------------------------------------------------------------------------------------->
       
+      <section class="gallerysec">
+        <h2>Projects</h2>
+        <div class="container gallery">
+          <img src="assests/gal1.jpg" alt="">
+          <img src="assests/gal2.jpg" alt="">
+          <img src="assests/gal3.jpg" alt="">
+          <img src="assests/gal4.jpg" alt="">
+
+          <img src="assests/gal5.jpg" alt="">
+          <img src="assests/gal6.webp" alt="">
+          <img src="assests/gal7.jpg" alt="">
+          <img src="assests/gal8.jpg" alt="">
+        </div>
+      </section>
+      <!---------------------------------------------------------------------------------------------------------------------->
       <section class="faqsec">
         <div>
           <h2>FAQ</h2>
