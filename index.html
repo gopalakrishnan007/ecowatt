@@ -7,11 +7,20 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>EcoWatt Solutions</title>
     <style>
-        body{
+        *{
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+          font-family: 'Roboto', sans-serif;
         }
         #navid{
             width: 95%;
@@ -21,8 +30,7 @@
           background-color: white;
         }
 
-        /* Set the text color of the links in the navbar to black */
-        /* Set the text color of the links in the navbar to black */
+
         .navbar .navbar-nav .nav-item .nav-link {
           color: black;
         }
@@ -42,9 +50,77 @@
           width: 30%;
           height: AUTO;
         }
-        .carousel h5{
+        .carousel h6{
           font-size: 50px;
           
+        }
+        #navbr{
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+        }
+        .abutus{
+          text-align: center;
+        }
+         .faqsec{
+          width: 90%;
+          margin: 20px auto;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        }
+        .faqsec h6{
+          font-size: 18px !important;
+        }
+        .faq{
+          cursor: pointer;
+          border-bottom: 2px solid black;
+          margin-bottom: 20px;
+        }
+        .ques{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .ans{
+          transition: max-height 1.4s ease;
+        }
+        .faq .ans{
+          max-height: 0;
+          overflow: hidden;
+        }
+        
+        .faq.active .ans {
+          max-height: 300px;
+        }
+        
+        .faq.active i{
+          transform: rotate(180deg);
+        }
+        .faq i{
+          transition: transform 0.5s ease-in;
+        }
+        .contactsec{
+          width: 90%;
+          margin: 20px auto;
+        }
+        .contactsec h3{
+          text-align: center;
+          margin: 25px 0;
+        }
+        .contactsec h6{
+          margin-bottom: 20px;
+        }
+        .contactsec .cnt{
+          text-align: center;
+        }
+        .footersec{
+          width: 90%;
+          margin: 20px auto;
+          text-align: center;
+        }
+        .footersec i:hover{
+          cursor: pointer;
         }
     </style>
   </head>
@@ -52,8 +128,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top ">
         <div class="container-fluid" id="navid">
-          <a class="navbar-brand" href="#"><img class="navbrnd" src="assests/logo-removebg-preview.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img class="navbrnd" src="assests/logo-removebg-preview.png" alt="">
+          <button class="navbar-toggler bg-dark ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -71,6 +147,7 @@
                 <a class="nav-link" href="#">FAQ</a>
               </li>
               <li class="nav-item">
+
                 <a class="nav-link" href="#">Contact Us</a>
               </li>
               
@@ -88,21 +165,21 @@
           <div class="carousel-item active">
             <img src="assests/how_safe_are_solar_panels_desktop (1).jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Welcome to EcoWatt Solutions</h5>
+              <h6>Welcome to EcoWatt Solutions</h6>
               <p>Powering a Sustainable Future</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="assests/solar-panel-on-roof-1024x585 (1).png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Solar Power Solutions</h5>
+              <h6>Solar Power Solutions</h6>
               <p>Harvest the Power of the Sun</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="assests/MIT-Windy-Impact-01_0 (1).jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Wind Energy Innovation</h5>
+              <h6>Wind Energy Innovation</h6>
               <p>Harnessing the Wind's Power</p>
             </div>
           </div>
@@ -116,20 +193,127 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div>
-        <h2>About us</h2>
-        <div class="row abt" id="aboutus1">
-          <div class="col-6">
-            <img src="assests/aboutus1.jpg" alt="">
-          </div>
-          <div class="col-6 text-container" id="abouttxt">
-          <h4>About EcoWatt Solutions</h4>
-          <p>At EcoWatt Solutions, we are committed to a sustainable future powered by clean and renewable
-            energy. Our journey began with a profound passion for the environment and a vision to make a
-            difference. Today, we stand as a leading provider of sustainable energy solutions, dedicated to reducing
-            our carbon footprint and helping others do the same.</p>
+      
+      <section class="faqsec">
+        <div>
+          <h2>FAQ</h2>
+        </div>
+        <div class="faq">
+          <div class="ques">
+            <h6>1. What is renewable energy, and how does it work?</h6>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>          </div>
+          <div class="ans">
+            <p>Renewable energy is energy generated from natural resources that are constantly replenished, such
+              as sunlight, wind, and water. Solar panels convert sunlight into electricity, wind turbines harness the
+              kinetic energy of the wind, and hydroelectric plants use the energy of flowing water to generate power.</p>
           </div>
         </div>
-      </div>
+        <div class="faq">
+          <div class="ques">
+            <h6>2. What are the benefits of switching to sustainable energy sources?
+            </h6>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>          </div>
+          <div class="ans">
+            <p>The benefits are numerous. Switching to sustainable energy sources reduces greenhouse gas
+              emissions, lowers energy costs, promotes energy independence, and helps combat climate change.
+              It's an eco-friendly choice that contributes to a cleaner environment and a more secure energy future.</p>  
+          </div>
+        </div>
+        <div class="faq">
+          <div class="ques">
+            <h6>3. How can I determine if my property is suitable for solar panel installation?
+            </h6>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>          </div>
+          <div class="ans">
+          <p>The suitability of your property depends on factors like its location, sun exposure, and shading. Our
+            experts can perform a site assessment to evaluate its solar potential. We consider these factors to
+            provide you with the most accurate and beneficial solar solution.</p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="ques">
+            <h6>4. What maintenance is required for solar panels?
+            </h6>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>          </div>
+          <div class="ans">
+          <p>Solar panels require minimal maintenance. Regular cleaning, typically with water and a soft brush, helps
+            maintain their efficiency. Additionally, it's important to schedule periodic inspections and maintenance
+            by professionals to ensure optimal performance.</p></div>
+        </div>
+        <div class="faq">
+          <div class="ques">
+            <h6>5. How can I transition to clean energy for my business?
+            </h6>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>          </div>
+          <div class="ans">
+          <p>Transitioning to clean energy for your business involves an assessment of your energy needs, followed
+            by the design and installation of the appropriate system, such as solar or wind energy. We offer
+            consultation services to help businesses make the transition smoothly.</p></div>
+        </div>
+        <div class="faq">
+          <div class="ques">
+            <h6>6. What is grid-balancing, and how does it work with energy storage solutions?
+            </h6>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>          </div>
+          <div class="ans">
+          <p>Grid-balancing involves stabilizing energy supply by matching energy generation with consumption.
+            Energy storage solutions, like advanced battery systems, store excess energy when it's generated and
+            release it during periods of high demand, ensuring a consistent and reliable energy supply.</p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="ques">
+            <h6>7. Are your projects eco-friendly and environmentally responsible?
+            </h6>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>          </div>
+          <div class="ans">
+          <p>Yes, all our projects prioritize eco-friendliness and environmental responsibility. We adhere to the
+            highest environmental standards, ensuring minimal impact on natural ecosystems while generating
+            clean energy.</p>
+          </div>
+        </div>
+      </section>
+      <section class="contactsec">
+        <div class="contact">
+          <h3>Contact Us</h3>
+            <div class="row">
+              <div class="col-lg-4 cnt">
+                <h6><strong>Office Hours</strong></h6>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM <br>
+                  Saturday: 10:00 AM - 2:00 PM <br>
+                  (Closed on Sundays and
+                  Holidays)</p>
+              </div>
+              <div class="col-lg-4 cnt">
+                <h6><strong>Contact Information</strong></h6>
+                <p><i class="fa-solid fa-phone fa-xl" style="color: #45a4b0;"></i> Phone: +971 289737479 </p><p><i class="fa-solid fa-envelope fa-xl" style="color: #45a4b0;"></i> Email: info@ecowattsolutions.ae</p>
+              </div>
+              <div class="col-lg-4 cnt">
+                <h6><strong>Location</strong></h6>
+                <p>EcoWatt Solutions <br> 123 Green Energy Way <br>Sustainable City Greenland, ECO123</p>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="footersec">
+        <div class="footer">
+          <p><i class="fa-brands fa-facebook fa-xl" style="color: #6593e2;"></i>
+            <i class="fa-brands fa-telegram fa-xl" style="color: #436ff4;"></i>
+            <i class="fa-brands fa-discord fa-xl" style="color: #467fe2;"></i>
+            <i class="fa-brands fa-reddit fa-xl" style="color: #dd431d;"></i>
+
+          </p>
+          <p>Copyright<i class="fa-regular fa-copyright" style="color: #000000;"></i>All rights reserved</p>
+        </div>
+      </section>
+    <script>
+      const faqs = document.querySelectorAll(".faq");
+      faqs.forEach(faq => {
+        faq.addEventListener("click", () => {
+          faq.classList.toggle("active");
+        });
+      });
+
+    </script>
   </body>
 </html>
