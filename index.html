@@ -28,7 +28,8 @@
         }
         /* Set the background color of the navbar to white */
         .navbar {
-          background-color: white;
+          background-color: white !important;
+          font-weight: 500;
         }
 
 
@@ -148,7 +149,7 @@
           justify-content: center; 
         }
         .servicessec img{
-          max-width: 300px;
+          max-width: 250px;
           height: auto;
         }
         .servicessec h2{
@@ -186,7 +187,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top ">
         <div class="container-fluid" id="navid">
-          <img class="navbrnd" src="assests/logo-removebg-preview.png" alt="">
+          <img class="navbrnd" src="assests/brand.png" alt="">
           <button class="navbar-toggler bg-dark ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -196,23 +197,27 @@
                 <a class="nav-link"  href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="#aboutus">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#gallery">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
               </li>
               <li class="nav-item">
 
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#footer">Contact Us</a>
               </li>
               
             </ul>
           </div>
         </div>
       </nav>
+      <!-------------------------------------------------------------------------------------------------------------->
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -228,7 +233,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assests/solar-panel-on-roof-1024x585 (1).png" class="d-block w-100" alt="...">
+            <img src="assests/solar-system-2939560_1920 (1).jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h6>Solar Power Solutions</h6>
               <p>Harvest the Power of the Sun</p>
@@ -251,7 +256,127 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <section class="servicessec">
+      <!----------------------------------------------------------------------------------------------------->
+      <style>
+        .aboutsec{
+          width: 85%;
+          margin: 40px auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; /* Center vertically */
+          align-items: center;
+        }
+        .aboutsec p{
+          text-align: justify;
+        }
+        .aboutsec h2 , .aboutsec h4{
+          text-align: center;
+          margin: 20px 0;
+        }
+        .aboutsec h6{
+          font-weight: 500;
+          font-size: 18px;
+          text-align: center;
+        }
+      </style>
+      <section class="aboutsec" id="aboutus">
+        <div class="about">
+          <h2>About Us</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <h6>About EcoWatt Solutions</h6>
+              <p>At EcoWatt Solutions, we are committed to a sustainable future powered by clean and renewable
+                energy. Our journey began with a profound passion for the environment and a vision to make a
+                difference. Today, we stand as a leading provider of sustainable energy solutions, dedicated to reducing
+                our carbon footprint and helping others do the same.</p>
+            </div> 
+            <div class="col-md-6">
+              <h6>Our Mission</h6>
+              <p>Our mission is clear: to provide accessible and environmentally responsible energy solutions that
+                empower individuals, businesses, and communities to transition to a cleaner, more sustainable energy
+                future. We believe that a greener world is not just a possibility, but an imperative</p>
+            </div>  
+
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h6>Our Team</h6>
+            <p>Behind EcoWatt Solutions is a team of passionate experts who share a common goal: to make clean
+              energy accessible to all. Our diverse team brings together the skills and experience needed to navigate
+              the complexities of the sustainable energy landscape</p>  
+            </div> 
+            <div class="col-md-6">
+              <h6>Join Our Movement</h6>
+            <p>By choosing EcoWatt Solutions, you're not just making a smart investment; you're contributing to a
+              sustainable future for our planet. Join our movement toward a cleaner, greener world powered by
+              renewable energy.</p>  
+            </div>  
+
+          </div>
+          <style>
+            .whyus img{
+              max-width: 50px;
+              max-height: 50px;
+              display: flex;
+              margin: 0 auto;
+              text-align: center;
+              align-items: center;
+            }
+            .whyus .card:hover{
+              text-shadow: 2px 2px 5px red;
+            }
+          </style>
+          <div class="whyus">
+            <h4>Why Choose Us</h4>
+            <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card" style="width: 18rem;">
+                <img src="assests/team.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Experience</h5>
+                  <p class="card-text">With years of experience in the sustainable energy industry, we bring a wealth of
+                knowledge to every project.</p>
+                 
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card" style="width: 18rem;">
+                <img src="assests/innovation.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Innovation</h5>
+                  <p class="card-text">We embrace cutting-edge technology to deliver efficient, cost-effective, and
+                reliable solutions.</p>
+                 
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <img src="assests/commitment.jpg" alt="">
+              <h6>Commitment</h6>
+              <p>Our team is committed to sustainability, and our success is measured by our
+                clients' environmental impact reduction.
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <img src="assests/community.png" alt="">
+              <h6>Community</h6>
+              <p>We actively engage with communities, providing education, workshops, and
+                resources to promote green energy adoption.
+                </p>
+            </div>
+
+          </div>
+          
+          </div>
+          
+        </div>
+      </section>
+      <!------------------------------------------------------------------------------------------------->
+      <section class="servicessec" id="services">
         <div class="services">
           <h2>Services</h2>
           <div class="row">
@@ -309,7 +434,7 @@
       </section>
       <!------------------------------------------------------------------------------------------------->
       
-      <section class="gallerysec">
+      <section class="gallerysec" id="gallery">
         <h2>Projects</h2>
         <div class="container gallery">
           <img src="assests/gal1.jpg" alt="">
@@ -324,7 +449,7 @@
         </div>
       </section>
       <!---------------------------------------------------------------------------------------------------------------------->
-      <section class="faqsec">
+      <section class="faqsec" id="faq">
         <div>
           <h2>FAQ</h2>
         </div>
@@ -425,7 +550,8 @@
             </div>
         </div>
       </section>
-      <section class="footersec">
+      <!------------------------------------------------------------------------------>
+      <section class="footersec" id="footer">
         <div class="footer">
           <p><i class="fa-brands fa-facebook fa-xl" style="color: #6593e2;"></i>
             <i class="fa-brands fa-telegram fa-xl" style="color: #436ff4;"></i>
